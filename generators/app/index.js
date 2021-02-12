@@ -5,11 +5,8 @@ module.exports = class extends Generator {
     const destination = this.destinationPath();
     const context = { name: "temp" };
     console.warn(template);
-    this.fs.copy(
-      template,
-      destination,
-      { globOptions: { dot: true } },
-      context
-    );
+    this.fs.copyTpl(template, destination, context, {
+      globOptions: { dot: true },
+    });
   }
 };
