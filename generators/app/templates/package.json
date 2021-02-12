@@ -2,7 +2,7 @@
   "name": "<%= name %>",
   "version": "1.0.0",
   "main": "index.js",
-  "description": "the generator of silence_zhpf cli",
+  "description": "<%= desc %>",
   "license": "MIT",
   "dependencies": {
   },
